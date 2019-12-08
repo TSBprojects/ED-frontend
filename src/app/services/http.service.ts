@@ -16,7 +16,7 @@ export class HttpService {
     console.log(imageFile);
     const formData = new FormData();
     formData.append('img', imageFile);
-    return this.httpClient.post<ImageResponse>(environment.backend_root + '/recognize', formData);
+    return this.httpClient.post<ImageResponse>(environment.backend_root + '/recognizeImage', formData);
   }
 
 }
